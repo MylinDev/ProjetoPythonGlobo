@@ -1,0 +1,3 @@
+selenium
+reportlab
+chromedriver-autoinstaller
