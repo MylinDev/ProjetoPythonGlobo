@@ -1,3 +1,5 @@
 selenium
 reportlab
 chromedriver-autoinstaller
+rich
+python-dotenv
