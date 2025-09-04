@@ -15,7 +15,6 @@ Este projeto automatiza a busca de notícias sobre vagas de emprego no portal G1
 - Python 3.8+
 - Google Chrome instalado
 - Chromedriver compatível (instalado automaticamente pelo script)
-- As fontes Roboto-Regular.ttf e Roboto-Bold.ttf na mesma pasta do script (baixe em https://fonts.google.com/specimen/Roboto)
 
 ## Instalação
 1. Clone ou baixe este repositório.
