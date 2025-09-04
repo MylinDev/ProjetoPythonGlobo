@@ -1,14 +1,14 @@
 
 # Projeto Globo Vagas de Emprego - PDF Automático
 
-Este projeto automatiza a busca de notícias sobre vagas de emprego no portal G1/Globo usando Selenium, e gera um PDF profissional para cada notícia encontrada.
+Este projeto automatiza a busca de notícias sobre vagas de emprego no portal G1/Globo usando Selenium, e gera um PDF para cada notícia encontrada.
 
 ## O que o script faz?
 - Busca notícias do dia sobre vagas de emprego no G1/Globo (limite de 20), mas basta colocar mais ou tirar o limite, qualquer coisa entre
  em contato que respondo dúvidas sobre o código.
 - Extrai título completo, resumo, data, estado, área e link da notícia.
-- Acessa a notícia para pegar o texto completo e o título real (não cortado).
-- Gera um PDF para cada notícia, com layout profissional (faixa vermelha, fontes Roboto, link clicável, etc).
+- Acessa a notícia para pegar o texto completo e o título real. 
+- Gera um PDF para cada notícia.
 - O nome do PDF inclui estado, área, data e índice.
 
 ## Pré-requisitos
@@ -43,4 +43,3 @@ Dúvidas? Abra uma issue ou entre em contato.
 =======
 # ProjetoPythonGlobo
 Projeto acadêmico para fins de estudos que faço um WebScrapping no site da Globo para buscar vagas diárias, adicionando em um PDF com as informações da vaga e mandando no e-mail de quem quiser.
->>>>>>> 5da975af922e6b1e25ac4cbbe8aa1213e40cd5cd
