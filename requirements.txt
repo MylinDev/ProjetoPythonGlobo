@@ -1,5 +1,7 @@
+openai
+python-dotenv
 selenium
 reportlab
 chromedriver-autoinstaller
 rich
-python-dotenv
+

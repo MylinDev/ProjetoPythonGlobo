@@ -1,3 +1,4 @@
+from gpt_utils import resumir_texto_openai
 import os
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
@@ -92,7 +93,9 @@ def gerar_pdf(noticia, estado, area, data_pub, idx):
     c.drawString(20 * mm, y, "Notícia:")
     y -= 8 * mm
     noticia_completa = noticia.get("resumo", "")
-    lines = simpleSplit(noticia_completa, "Helvetica", 11, width - 40 * mm)
+    # Resumir o texto usando OpenAI antes de gerar o PDF
+    resumo = resumir_texto_openai(noticia_completa)
+    lines = simpleSplit(resumo, "Helvetica", 11, width - 40 * mm)
     for line in lines:
         if y < 30 * mm:
             c.showPage()

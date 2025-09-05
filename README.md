@@ -23,6 +23,10 @@ Este projeto automatiza a busca de notícias sobre vagas de emprego no portal G1
    pip install -r requirements.txt
    ```
 3. Baixe as fontes Roboto (Regular e Bold) e coloque na pasta do projeto.
+4. Para usar o resumo automático com ChatGPT, crie um arquivo `.env` na raiz do projeto com:
+   ```
+   OPENAI_API_KEY=sua-chave-da-openai-aqui
+   ```
 
 ## Como executar
 1. Abra o terminal na pasta do projeto.
@@ -32,10 +36,12 @@ Este projeto automatiza a busca de notícias sobre vagas de emprego no portal G1
    ```
 3. Os PDFs serão gerados na mesma pasta, um para cada notícia encontrada.
 
+
 ## Observações
 - O script usa Selenium em modo headless (não abre janela do navegador).
 - O layout do PDF é inspirado nas cores do G1.
 - O script só pega notícias do dia (data de hoje ou "há X horas/minutos").
+- Se a variável OPENAI_API_KEY estiver configurada, o texto da notícia será resumido automaticamente em português pelo ChatGPT antes de ser incluído no PDF.
 
 ---
 Dúvidas? Abra uma issue ou entre em contato.
