@@ -29,6 +29,7 @@ def get_noticias_globo_selenium(driver, limite, SEARCH_URL_BASE):
             break
         cards = driver.find_elements(By.CSS_SELECTOR, ".widget--info")
         encontrou_noticia_do_dia_pagina = False
+        # Verifica se há notícias do dia na página atual.
         for card in cards:
             try:
                 titulo_elem = card.find_element(By.CSS_SELECTOR, ".widget--info__title")
