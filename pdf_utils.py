@@ -49,7 +49,6 @@ def gerar_pdf(noticia, estado, area, data_pub, idx):
     link_width = c.stringWidth(link_text, "Helvetica-Oblique", 10)
     c.linkURL(link, (20 * mm, y, 20 * mm + link_width, y + 10 * mm), relative=0)
     c.setFillColorRGB(0, 0, 0)
-    from reportlab.pdfbase.pdfmetrics import stringWidth
     if "Roboto-Bold" in pdfmetrics.getRegisteredFontNames():
         c.setFont("Roboto-Bold", 12)
     else:

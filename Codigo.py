@@ -18,7 +18,7 @@ LIMITE = 20
 
 
 
-
+# Aqui estou colocando a função main para organizar o fluxo do programa, com estados e áreas de interesse.
 def main():
     print("Obtendo notícias sobre vagas de emprego com Selenium...")
     options = Options()

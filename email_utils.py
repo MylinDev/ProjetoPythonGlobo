@@ -3,6 +3,7 @@ from email.message import EmailMessage
 import smtplib
 from rich import print
 
+# Função para enviar e-mail com PDF em anexo, usando variáveis de ambiente para credenciais, crie um arquivo .env na raiz do projeto e coloque suas credenciais lá. 
 def enviar_email(destinatario, assunto, corpo, caminho_pdf):
     try:
         message = EmailMessage()

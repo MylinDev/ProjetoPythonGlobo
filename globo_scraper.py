@@ -3,7 +3,7 @@ from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+# Função para buscar notícias no G1/Globo usando Selenium , mas pode usar outra fonte se quiser, qualquer dúvida entre em contato pelo meu github.
 def get_noticias_globo_selenium(driver, limite, SEARCH_URL_BASE):
     noticias = []
     url = SEARCH_URL_BASE
