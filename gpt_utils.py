@@ -12,7 +12,7 @@ def resumir_texto_openai(texto):
     prompt = f"Resuma o texto a seguir de forma clara e objetiva, mantendo as informações principais:\n\n{texto}"
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-4-turbo",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=300,
             temperature=0.3

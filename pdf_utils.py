@@ -80,8 +80,19 @@ def gerar_pdf(noticia, estado, area, data_pub, idx):
     for line in titulo_lines:
         if y < 30 * mm:
             c.showPage()
+            # Redesenha fundo e faixa vermelha
+            c.setFillColorRGB(1, 1, 1)
+            c.rect(0, 0, width, height, fill=1, stroke=0)
+            c.setFillColorRGB(196/255, 23/255, 12/255)
+            faixa_altura = 25 * mm
+            c.rect(0, height - faixa_altura, width, faixa_altura, fill=1, stroke=0)
+            # Redesenha título do topo
+            c.setFont(font_title, 16)
+            c.setFillColorRGB(1, 1, 1)
+            c.drawString(20 * mm, height - 18 * mm, "Vaga de Emprego")
+            c.setFillColorRGB(0, 0, 0)
             c.setFont(font_title, 12)
-            y = height - 20 * mm
+            y = height - faixa_altura - 10 * mm
         c.drawString(20 * mm, y, line)
         y -= 7 * mm
     c.setFont(font_text, 11)
@@ -99,8 +110,19 @@ def gerar_pdf(noticia, estado, area, data_pub, idx):
     for line in lines:
         if y < 30 * mm:
             c.showPage()
+            # Redesenha fundo e faixa vermelha
+            c.setFillColorRGB(1, 1, 1)
+            c.rect(0, 0, width, height, fill=1, stroke=0)
+            c.setFillColorRGB(196/255, 23/255, 12/255)
+            faixa_altura = 25 * mm
+            c.rect(0, height - faixa_altura, width, faixa_altura, fill=1, stroke=0)
+            # Redesenha título do topo
+            c.setFont(font_title, 16)
+            c.setFillColorRGB(1, 1, 1)
+            c.drawString(20 * mm, height - 18 * mm, "Vaga de Emprego")
+            c.setFillColorRGB(0, 0, 0)
             c.setFont("Helvetica", 11)
-            y = height - 20 * mm
+            y = height - faixa_altura - 10 * mm
         c.drawString(20 * mm, y, line)
         y -= 6 * mm
     c.save()
