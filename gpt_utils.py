@@ -9,7 +9,7 @@ def resumir_texto_openai(texto):
         print("[AVISO] OPENAI_API_KEY não encontrada. Usando texto completo.")
         return texto
     openai.api_key = api_key
-    prompt = f"Resuma o texto a seguir de forma clara e objetiva, mantendo as informações principais:\n\n{texto}"
+    prompt = f"Resuma o texto a seguir de forma clara e objetiva, em um máximo de 100 palavras, mantendo as informações principais:\n\n{texto}"
     try:
         response = openai.ChatCompletion.create(
             model="gpt-4-turbo",
